@@ -1,0 +1,40 @@
+body {
+	font-size: 1em;
+	font-family: $body-font;
+}
+
+a {
+	color: $mine-shaft;
+	border-bottom: 2px solid $silver;
+	transition: all $transition-duration ease;
+
+	&:hover {
+		color: lighten($mine-shaft, 20%);
+		border-bottom: 2px solid darken($silver, 20%);
+		padding-bottom: 1px;
+	}
+
+	&:focus {
+	}
+
+	&:active {
+		font-weight: bold;
+	}
+
+}
+
+h1, h2, h3 {
+	font-family: $headline-font;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}

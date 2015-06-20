@@ -38,3 +38,19 @@ h2 {
 h3 {
 	font-size: 1.5em;
 }
+
+input, textarea {
+	font-size: 1em;
+	border: 1px solid $silver;
+	padding: 5px;
+	margin: 2.5% 0;
+}
+
+textarea {
+	width: 100%;
+	height: 20em;
+}
+
+label {
+	display: block;
+}

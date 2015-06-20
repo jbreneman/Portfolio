@@ -8,19 +8,17 @@
 		<meta property="og:image" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<header class="page-header">
-			<h1><a href="/">Jesse Breneman</a></h1>
-			<nav class="page-nav">
-				
+			<nav class="page-header__nav">
+				<h1><a href="/">Jesse Breneman</a></h1>
 			</nav>
+			<p class="page-header__splash">Hi, I'm a front end web developer who loves good code, good interfaces, and good tea. <i class="fa fa-coffee"></i></p>
 		</header>
 		<main>
-			<section class="splash">
-				<p>Hi, I'm a front end web developer who loves good code, good interfaces, and good tea.</p>
-			</section>
 			<section class="skills">
 				<h2>Skills & Tooling</h2>
 
@@ -33,7 +31,7 @@
 					</ul>
 
 					<p class="skills__description">
-					I like well designed websites. When I was 13 I built my first website. As you might guess, it was pretty bad, but over the years I've gotten a bit better at it. In the last year I've gotten more serious about web development and began teaching myself Javascript as well. Many books and tutorials later I'm starting to understand how to use it!
+					I like well <a href="#">designed websites</a>. When I was 13 I built my first website. As you might guess, it was pretty bad, but over the years I've gotten a bit better at it. In the last year I've gotten more serious about web development and began teaching myself Javascript as well. Many books and tutorials later I'm starting to understand how to use it!
 					</p>
 				</div>
 				
@@ -63,14 +61,46 @@
 
 			</section>
 			<section class="projects">
-				
+				<h2>Projects</h2>
+				<div class="projects__section">
+					<h3>Project 1</h3>
+					<img src="" alt="">
+					<p>Project description goes here. It may be longer than this?</p>
+				</div>
+
+				<div class="projects__section">
+					<h3>Project 1</h3>
+					<img src="" alt="">
+					<p>Project description goes here. It may be longer than this?</p>
+				</div>
+
+				<div class="projects__section">
+					<h3>Project 1</h3>
+					<img src="" alt="">
+					<p>Project description goes here. It may be longer than this?</p>
+				</div>
 			</section>
 			<section class="contact">
-				
+				<h2>Contact Me</h2>
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" name="name" placeholder="e.g. Jesse Breneman">
+					<label for="email">Email Address:</label>
+					<input type="email" name="email" placeholder="you@yourdomain.tld">
+					<textarea></textarea>
+					<input type="submit" value="Send">
+				</form>
 			</section>
 		</main>
 		<footer class="page-footer">
-			
+			<p class="page-footer__copyright">Copyright &copy; Jesse Breneman</p>
+			<nav class="page-footer__nav">
+				<ul>
+					<li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+					<li><a href="#"><i class="fa fa-linkedin"> Linkedin</i></a></li>
+					<li><a href="#"><i class="fa fa-github"></i> Github</a></li>
+				</ul>
+			</nav>
 		</footer>
 		<script src="js/main.js"></script>
 	</body>

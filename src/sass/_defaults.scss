@@ -1,24 +1,24 @@
 body {
 	font-size: 1em;
 	font-family: $body-font;
+	line-height: 1.5;
 }
 
-a {
+main a {
 	color: $mine-shaft;
-	border-bottom: 2px solid $silver;
+	box-shadow: inset 0 -4px 0 $silver;
+	border-bottom: 1px solid $silver;
 	transition: all $transition-duration ease;
 
 	&:hover {
-		color: lighten($mine-shaft, 20%);
-		border-bottom: 2px solid darken($silver, 20%);
-		padding-bottom: 1px;
+		background: $silver;
 	}
 
 	&:focus {
 	}
 
 	&:active {
-		font-weight: bold;
+		background: lighten($silver, 10%);
 	}
 
 }

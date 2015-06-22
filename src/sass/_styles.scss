@@ -48,9 +48,15 @@
 }
 
 .skills {
-	//padding: 0 5%;
+	width: 100%;
+	padding: 0 5%;
+	display: flex;
+	flex-wrap: wrap;
 
 	&__list {
+
+		width: 50%;
+		height: 400px;
 		
 
 		li {
@@ -59,12 +65,17 @@
 			width: 60%;
 			margin: 20% 0 0 -5%px;
 			text-align: right;
-			transform: rotate(-20deg);
+			transform: rotate(-15deg);
 			background-image: linear-gradient(
 				to left,
 				$blue-lagoon,
 				white
 			);
+
+			&:first-child {
+				font-weight: bold;
+				background: $blue-lagoon;
+			}
 		}
 	}
 }

@@ -159,15 +159,30 @@ label {
     transform: translateY(-50%);
     margin: 0 auto; }
 
-.skills__list li {
-  font-size: 1.1em;
-  padding: 5px;
-  width: 60%;
-  margin: 20% 0 0 -5% px;
-  text-align: right;
-  -webkit-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  background-image: linear-gradient(to left, #048091, white); }
+.skills {
+  width: 100%;
+  padding: 0 5%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .skills__list {
+    width: 50%;
+    height: 400px; }
+    .skills__list li {
+      font-size: 1.1em;
+      padding: 5px;
+      width: 60%;
+      margin: 20% 0 0 -5% px;
+      text-align: right;
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+      background-image: linear-gradient(to left, #048091, white); }
+      .skills__list li:first-child {
+        font-weight: bold;
+        background: #048091; }
 
 .projects {
   background: #C0C0C0;

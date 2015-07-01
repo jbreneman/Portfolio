@@ -1,4 +1,5 @@
 .page-header {
+	position: relative;
 	width: 100%;
 	height: 400px;
 	padding: 75px 0 0 0;
@@ -34,7 +35,6 @@
 
 	&__links {
 		padding: 0 5%;
-		//max-width: 50%;
 		@include vertical-align-all();
 	}
 
@@ -43,30 +43,33 @@
 	}
 
 	&__splash {
-		//max-width: 50%;
+		position: relative;
+		z-index: $text;
+		max-width: 100%;
 		padding: 0 10%;
 		color: white;
-		position: relative;
 		@include vertical-align-all();
 	}
 
-	//yeah it's a little ugly
-	&__teapot {
+	&__tea {
 		position: absolute;
-		left: 1%;
-		width: 98%;
-		top: 50%;
-		transform: translateY(-50%);
-		margin: 0 auto;
-		z-index: -1;
+		left: 0;
+		width: 100%;
+		top: 25%;
+		z-index: $teapot;
 
-		& path {
-			fill: rgba(white, 0.5);
-		}
-
+		//keep the cradits but don't display
 		& text {
 			display: none;
 		}
+	}
+
+	&__steam {
+		fill: rgba($silver, 0.4);
+	}
+
+	&__teapot {
+		fill: rgba($blue-lagoon, 0.3);
 	}
 }
 
@@ -75,13 +78,15 @@
 	padding: 0 5%;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 
 	&__heading {
-		flex-grow: 1;
+		flex-basis: 100%;
 	}
 
 	&__list {
-		flex-grow: 1;
+		flex-basis: 100%;
 		border-bottom: 1px solid $silver;
 		margin: 0 0 .5em 0;
 		padding: 0 0 1em 0;

@@ -3,26 +3,31 @@ body {
 	font-size: 1.1em;
 	font-family: $body-font;
 	line-height: 1.8;
+	z-index: $default-z
 }
 
-main a {
-	color: $mine-shaft;
-	box-shadow: inset 0 -4px 0 $silver;
-	border-bottom: 1px solid $silver;
-	transition: all $transition-duration ease;
+main {
+	position: relative;
+	& a {
+		color: $mine-shaft;
+		box-shadow: inset 0 -4px 0 $silver;
+		border-bottom: 1px solid $silver;
+		transition: all $transition-duration ease;
 
-	&:hover {
-		background: $silver;
+		&:hover {
+			background: $silver;
+		}
+
+		&:focus {
+		}
+
+		&:active {
+			background: lighten($silver, 10%);
+		}
+
 	}
-
-	&:focus {
-	}
-
-	&:active {
-		background: lighten($silver, 10%);
-	}
-
 }
+
 
 h1, h2, h3 {
 	font-family: $headline-font;

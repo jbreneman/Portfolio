@@ -14,48 +14,33 @@
 	</head>
 	<body>
 		<header class="page-header">
-			<section class="page-header__nav">
-				<nav class="page-header__links">
-				<h1 class="page-header__heading"><a href="/">Jesse Breneman</a></h1>
-				</nav>
-			</section>
-			<section class="page-header__splash">
-				<p>Hi, I'm a front end web developer from Columbus, Ohio. I love using my skills as a designer and a developer to make the web a better place. I also drink <a href="">a lot of tea</a>.</p>
-			</section>
-			<svg class="page-header__tea" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" x="0px" y="0px" viewBox="30 0 130 230" enable-background="new 0 0 100 94.69" xml:space="preserve" id="svg2">
-				  <metadata id="metadata14"/>
-				  <defs id="defs12"/>
-				  <text x="0" y="221.32751" font-size="5px" font-weight="bold" id="text6" style="fill:#000;font-family:'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif;font-size:5px;font-weight:bold">
-				    Created by Edward Boatman
-				  </text>
-				  <text x="0" y="226.32751" font-size="5px" font-weight="bold" id="text8" style="fill:#000;font-family:'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif;font-size:5px;font-weight:bold">
-				    from the Noun Project
-				  </text>
-				  <g id="layer3" transform="translate(0,-270)">
-				    <path class="page-header__steam" d="m95.043393 448.93191 4.610311 3.90103c0 0 41.605016-53.44857 49.649546-63.48047 11.46186-14.29348 13.0454-19.38233 19.50517-29.78973 6.38352-10.28454 6.73815-9.22062 10.99382-17.0227 4.17702-7.65786 11.70311-21.98764 9.22064-40.4289-7.62833-38.49175-43.46728-26.68953-60.64337-24.11549-24.99628 0.7661-24.71687-4.95451-61.352639 1.06392-39.666269 4.71983-48.498096 10.55393-56.033046 25.88869-7.1427353 11.56444-5.3195923 19.85981-3.1917557 33.69075 2.127837 13.83094 17.0674157 36.29493 43.2660227 36.17323 43.383121-0.20152 53.008538 5.84144 59.579448 14.54022 3.92988 5.2025 5.31959 18.08662 0.35464 28.01653-4.96495 9.92991-15.958787 31.56292-15.958787 31.56292z" id="path3412" style="fill-rule:evenodd;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-width:4;"/>
-				  </g>
-				  <path class="page-header__teapot" d="m101.1022 182.20442-6.096007-4.407c-0.244-0.177-0.56-0.274-0.887-0.274-0.41 0-0.802 0.15-1.073 0.412l-0.221 0.212 0 0-0.005 0.005-7.696 7.405c-0.419-0.432-0.854-0.848-1.302-1.249l0-10.999c0-10.374-3.798996-20.136-10.695996-27.489-6.948-7.407-16.202-11.486-26.055-11.486-9.854 0-19.108 4.079-26.056 11.486-6.897 7.353-10.696 17.116-10.696 27.489l0 10.997c-5.2439993 4.691-8.5459993 11.508-8.5459993 19.099 0 14.149 11.4699993 25.619 25.6189993 25.619l39.357 0c11.498 0 21.226996-7.575 24.468996-18.007l0 0 10.457007-26.878c0.253-0.656-0.004-1.524-0.573-1.935zm-23.406003-1.965c-3.319-1.572-7.029-2.453-10.946-2.453l-1.985 0c1.916 0 3.469-1.553 3.469-3.469 0-1.916-1.553-3.469-3.469-3.469l-12.197 0c1.641-0.919 2.69-2.324 2.69-3.898 0-2.768-3.241-5.012-7.24-5.012-3.999 0-7.24 2.244-7.24 5.012 0 1.575 1.05 2.979 2.691 3.898l-14.092 0c-1.916 0-3.469 1.553-3.469 3.469 0 1.916 1.553 3.469 3.469 3.469l-1.984 0c-3.917 0-7.627 0.88-10.947 2.452l0-6.928c0-18.113 13.738-32.849 30.625-32.849 16.887 0 30.625 14.736 30.625 32.849l0 6.929z" id="path4"/>
-				</svg>
+			<h1 class="page-header__heading"><a href="/">Jesse Breneman</a></h1>
+			<nav class="page-header__links">
+				<ul>
+					<li><a href="#skills">skills</a></li>
+					<li><a href="#projects">projects</a></li>
+					<li><a href="#contact">contact me</a></li>
+					<li><a href="#">blog</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
-			<section class="skills">
-				<h2 class="skills__heading">Stuff I'm good at</h2>
+			<section class="splash">
+				<h2>Hi. I build websites.</h2>
+			</section>
+			<section class="skills" id="skills">
+				<div class="skills__header">
+					<h2 class="skills__heading">How I do it</h2>
+				</div>
 				<div class="skills__list">
-					<h3>HTML5 & CSS3 (and Sass!)</h3>
+					<h3>Front End</h3>
 					<p class="skills__description">
-						HTML and CSS is my jam! I've been building websites for over 11 years, and have always been excited to watch the languages evolve. I prefer to stay as close to CSS as I can, but I use Sass for convenience and to keep my projects structured sanely.
+						HTML and CSS is my jam! I've been building websites as a hobby for years, and have always been excited to watch the languages evolve. As I've grown Javascript has been working it's way into my websites. I'm currently interested in Javascript frameworks and planning on delving into them deeply in the future.
 					</p>
 				</div>
 
 				<div class="skills__list">
-					<h3>Javascript</h3>
-					<p class="skills__description">
-						Javascript is becoming more and more exciting to me the more I learn about it. Although I've built a lot of websites, I've relied on Jquery in the past so I didn't have to know much Javascript. Not any more!
-					</p>
-				</div>
-
-				<div class="skills__list">
-					<h3>Back End Languages</h3>
+					<h3>Back End</h3>
 					<p class="skills__description">
 						I prefer front end work, but I've dabbled in back end as well. I have used PHP with Codeigniter & Mysql to create dynamic database driven sites in the past. Nowadays I prefer to do anything server side in Node.js.
 					</p>
@@ -64,24 +49,14 @@
 				<div class="skills__list">
 					<h3>Tools & Software</h3>
 					<p class="skills__description">
-						I've used Photoshop extensively both as a design tool and to edit photos that I've taken, and I also have some experience using Illustrator. Other tools I use in my workflow include Git <a href="https://github.com/jbreneman">(check out my github!)</a> and gulp.
-					</p>
-				</div>
-
-				<div class="skills__list">
-					<h3>Soft Skills</h3>
-					<p class="skills__description">
-						Communication in the workplace is a must, and through working as a sales associate and in management I've honed those skills. I'm comfortable working both on my own or in a team, and I've learned to adapt to situations as they arise. I'm a problem solver, when I run across something I can't solve right away I can't stop thinking about it until I've solved it.
+						I've used Photoshop extensively both as a design tool and to edit photos that I've taken, and I also have some experience using Illustrator. Other tools I use in my workflow include Git <a href="https://github.com/jbreneman">(check out my github!)</a> and gulp and all the goodness that goes along with it. Sublime Text is my preferred text editor.
 					</p>
 				</div>
 
 			</section>
-			<section class="projects">
-				<h2 class="projects__heading">Projects</h2>
-				<div class="projects__section">
-					<h3>Project 1</h3>
-					<img src="images/projects.jpg" alt="">
-					<p>Project description goes here. It may be longer than this?</p>
+			<section class="projects" id="projects">
+				<div class="projects__header">
+					<h2 class="projects__heading">Current Projects</h2>
 				</div>
 
 				<div class="projects__section">
@@ -95,24 +70,19 @@
 					<img src="images/projects.jpg" alt="">
 					<p>Project description goes here. It may be longer than this?</p>
 				</div>
-			</section>
-			<section class="contact">
-				<h2>Contact Me</h2>
-				<form>
-					<label for="name">Name:</label>
-					<input type="text" name="name" id="name" placeholder="e.g. Jesse Breneman">
-					<label for="email">Email Address:</label>
-					<input type="email" name="email" id="email" placeholder="you@yourdomain.tld">
-					<label for="message">Message:</label>
-					<textarea name="message" id="message"></textarea>
-					<input type="submit" value="Send">
-				</form>
+
+				<div class="projects__section">
+					<h3>Project 1</h3>
+					<img src="images/projects.jpg" alt="">
+					<p>Project description goes here. It may be longer than this?</p>
+				</div>
 			</section>
 		</main>
 		<footer class="page-footer">
-			<p class="page-footer__copyright">Copyright &copy; Jesse Breneman. <a href="https://thenounproject.com/search/?q=tea&i=678">Teapot by Edward Boatman from the Noun Project</a>.</p>
+			<p class="page-footer__copyright">Copyright &copy; Jesse Breneman.</p>
 			<nav class="page-footer__nav">
 				<ul>
+					<li><a href="#"><i class="fa fa-envelope-o icon"></i>Email Me</li>
 					<li><a href="#"><i class="fa fa-github icon"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter icon"></i></a></li>
 					<li><a href="#"><i class="fa fa-linkedin icon"></i></a></li>

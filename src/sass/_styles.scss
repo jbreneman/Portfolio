@@ -44,9 +44,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 2% 0 0 0;
-	background: $mine-shaft;
+	background: radial-gradient(ellipse farthest-corner at 0% 100%, rgba(104,128,138,0.4) 10%, rgba(138,114,76,0) 40%),linear-gradient(to bottom, rgba(57,173,219,0.25) 0%, rgba(42,60,87,0.4) 100%),linear-gradient(135deg, #670d10 0%, #092756 100%);
 
   	&__header {
+  		color: white;
   		padding: 0 0.5em;
   		display: flex;
 		flex-direction: column;
@@ -77,9 +78,11 @@
 	flex-direction: row-reverse;
 	margin: 5% 0;
 	padding: 2% 0 0 0;
-	background: $mine-shaft;
+	background: radial-gradient(ellipse farthest-corner at 0% 100%, rgba(104,128,138,0.4) 10%, rgba(138,114,76,0) 40%),linear-gradient(to bottom, rgba(57,173,219,0.25) 0%, rgba(42,60,87,0.4) 100%),linear-gradient(135deg, #670d10 0%, #092756 100%);
+
 
 	&__header {
+		color: white;
 		padding: 0 0.5em;
   		display: flex;
 		flex-direction: column;

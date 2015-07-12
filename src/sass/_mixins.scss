@@ -6,19 +6,9 @@
 }
 
 @mixin gradient-heading() {
-	background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: white;
 	font-size: 8vw;
 	text-transform: uppercase;
 	margin: 0;
 	line-height: 1;
-
-	&:after {
-		width: 0;
-		height: 0;
-		border-top: 50px solid transparent;
-		border-left: 100px solid red;
-		border-bottom: 50px solid transparent;
-	}
 }

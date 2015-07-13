@@ -1,9 +1,16 @@
+.fadeInSideways {
+	transform: translateX(0) !important;
+	opacity: 1 !important;
+	transition: all $transition-duration ease;
+}
+
 .page-header {
 	background: $mine-shaft;
 	color: #fff;
 	width: 100%;
 	height: 75px;
-	position: relative;
+	position: fixed;
+	top: 0;
 	z-index: 5;
 
 	&__heading {
@@ -20,7 +27,7 @@
 		li {
 			display: none;
 		}
-		
+
 		li:last-child {
 			display: inline-block;
 			margin: 0 0 0 1.5em;
@@ -29,6 +36,7 @@
 }
 
 .splash {
+	margin: 150px 0 0 0;
 	font-size: 10vw;
 
 	h2 {
@@ -44,6 +52,7 @@
 
 //just a quick note: I'm using width instead of flex-basis because IE has a bug where it assumes the terrible normal box model instead of using border-box. Dammit IE.
 .main-section {
+	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 2% 0 0 0;
@@ -82,7 +91,7 @@
 		
 	}
 
-	&__list {
+	&__section {
 		color: $mine-shaft;
 		background: white;
 		width: 100%;
@@ -123,7 +132,7 @@
 	&__heading {
 	}
 
-	&__info {
+	&__section {
 		color: $mine-shaft;
 		width: 100%;
 		background: white;

@@ -2,7 +2,7 @@
 
 	.page-header {
 		padding: 0 20%;
-		
+
 		&__links {
 
 			li {
@@ -43,11 +43,22 @@
 
 	  	&__header {
 			width: 25%;
-			
+			transform: translateX(-100%);
+			opacity: 0;
 	  	}
 
-		&__list {
+		&__section {
 			width: 25%;
+			transform: translateX(100%);
+			opacity: 0;
+
+			&:nth-of-type(3) {
+				transition-delay: 200ms;
+			}
+
+			&:nth-of-type(4) {
+				transition-delay: 400ms;
+			}
 		}
 
 		&__description {
@@ -63,6 +74,8 @@
 
 		&__header {
 			width: 40%;
+			transform: translateX(100%);
+			opacity: 0;
 	  	}
 
 		&__heading {
@@ -71,6 +84,16 @@
 
 		&__section {
 			width: 20%;
+			transform: translateX(-100%);
+			opacity: 0;
+
+			&:nth-of-type(3) {
+				transition-delay: 200ms;
+			}
+
+			&:nth-of-type(4) {
+				transition-delay: 400ms;
+			}
 		}
 	}
 
@@ -79,12 +102,16 @@
 
 		&__header {
 			width: 50%;
+			transform: translateX(-100%);
+			opacity: 0;
 	  	}
 
 		&__heading {
 		}
 
-		&__info {
+		&__section {
+			transform: translateX(100%);
+			opacity: 0;
 			color: $mine-shaft;
 			width: 50%;
 			background: white;

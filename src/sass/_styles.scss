@@ -1,7 +1,7 @@
 .fadeInSideways {
 	transform: translateX(0) !important;
 	opacity: 1 !important;
-	transition: all $transition-duration ease;
+	transition: transform $transition-duration ease, opacity $transition-duration ease,;
 }
 
 .page-header {
@@ -111,15 +111,48 @@
 		width: 100%;
   	}
 
-	&__heading {
-		
+	&__description {
+		position: absolute;
+		top: 0;
+		opacity: 0;
+		background: rgba(#092756, 0.7);
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 30% 0 0 0;
+		font-size: 2em;
+		transition: opacity $transition-duration ease, padding $transition-duration ease;
+
+		&:hover {
+			opacity: 0.9;
+			padding: 40% 0 0 0;
+		}
+
+		& a {
+			color: white;
+		}
 	}
 
 	&__section {
 		color: $mine-shaft;
 		background: white;
 		width: 100%;
-		padding: 0 1.5em;
+		
+		a {
+			display: block;
+			box-shadow: none;
+			border-bottom: 0;
+			margin: 0;
+			padding: 0;
+
+			&:hover {
+				background: transparent;
+			}
+		}
+
+		img {
+			display: block;
+		}
 	}
 }
 

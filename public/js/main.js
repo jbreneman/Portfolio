@@ -268,8 +268,6 @@ var skills = getAnimationElements('skills'),
     projects = getAnimationElements('projects'),
     contact = getAnimationElements('contact'),
     didScroll = false;
-
-    console.log(skills);
  
 window.addEventListener("scroll", function() {
     didScroll = true;
